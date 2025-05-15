@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 205, 226);
+    color: #ff0077;
+}
+#header{
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+.intro-block{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1600px;
+}
+.intro-text{
+    padding-left: 20px;
+    margin-top: -200px ;
+    font-size: 35px;
+}
+.container{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #ff0077;
+    text-decoration: wavy;
+    font-size: large;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: rgb(247, 245, 123);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;  
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* ----------Services---------- */
+.about{
+    background: rgb(233, 244, 255);
+    color: #0044aa;;
+}
+#Services{
+    padding: 80px 0;
+    color: rgb(1, 64, 158);
+}
+.row{
+    display: flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    background-image: url(pics/bluey-removebg-preview.png);
+    background-repeat: repeat;
+    background-size: 5%;
+    
+}
+.about-col-2{
+    flex-basis: 60%;
+    color: #002a69;
+    text-align: center;
+    margin-bottom: 50%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+/* ----------MyProjects---------- */
+.services{
+    background: rgb(255, 248, 181);
+    color: #291800;
+}
+.empty-image{
+    background-image: url(pics/yellow-removebg-preview.png);
+     background-repeat: repeat;
+    background-size: 5%;
+}
+.myprojects{
+    margin-top: 70px;
+    text-align: center;
+}
+.projects{
+    border-radius: 10px;
+    position:relative ;
+    overflow: hidden;
+}
+.projects img{
+    width: 100%;
+    border-radius: 10px; 
+}
+.layer{
+     width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff0077) ;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    text-align: center;
+}
+
